@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Monocular camera imitation learning for space robot arm docking</title>
+  <desc id="desc">A monocular camera observes a docking target and trains an imitation policy for robot arm alignment.</desc>
+  <rect width="960" height="540" rx="28" fill="#f7fcff"/>
+  <rect x="74" y="76" width="812" height="388" rx="24" fill="#ffffff" stroke="#b8dced" stroke-width="3"/>
+  <text x="112" y="128" fill="#146c94" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">Monocular docking</text>
+  <text x="112" y="164" fill="#5f7180" font-family="Inter, Arial, sans-serif" font-size="18">camera observation to imitation policy</text>
+  <rect x="134" y="234" width="130" height="94" rx="18" fill="#e8f6ff" stroke="#43b7e8" stroke-width="3"/>
+  <circle cx="198" cy="280" r="28" fill="none" stroke="#146c94" stroke-width="8"/>
+  <circle cx="198" cy="280" r="10" fill="#43b7e8"/>
+  <g stroke="#43b7e8" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M276 248l158-66"/>
+    <path d="M276 312l158 64"/>
+  </g>
+  <rect x="430" y="180" width="170" height="196" rx="16" fill="#ffffff" stroke="#b8dced" stroke-width="3"/>
+  <rect x="456" y="208" width="118" height="140" rx="10" fill="#f7fcff" stroke="#c7e5f3" stroke-width="2"/>
+  <path d="M480 278h70M515 242v70" stroke="#40b8ad" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="515" cy="278" r="36" fill="none" stroke="#146c94" stroke-width="6"/>
+  <text x="515" y="410" text-anchor="middle" fill="#146c94" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700">image plane</text>
+  <path d="M636 280h92" stroke="#146c94" stroke-width="5" stroke-linecap="round"/>
+  <path d="M728 280l-18-11v22z" fill="#146c94"/>
+  <g transform="translate(734 202)">
+    <rect x="0" y="58" width="84" height="84" rx="14" fill="#e9fbf8" stroke="#40b8ad" stroke-width="3"/>
+    <path d="M22 100h40M42 80v40" stroke="#0f3550" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="42" cy="100" r="26" fill="none" stroke="#0f3550" stroke-width="5"/>
+  </g>
+  <text x="776" y="390" text-anchor="middle" fill="#0f3550" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">dock target</text>
+</svg>
