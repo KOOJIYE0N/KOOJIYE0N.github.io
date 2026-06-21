@@ -14,6 +14,6 @@ Personal GitHub Pages site for Koo Jiyeon / 구지연.
 - Main content: `index.html`
 - Styling: `styles.css`
 - Filtering behavior: `script.js`
-- Hero image: `assets/hero-robotics-ai.png`
+- Visual styling: `styles.css`
 
 The publication descriptions are drafted from public listings and should be refined with exact author order, roles, project links, and images when available.
