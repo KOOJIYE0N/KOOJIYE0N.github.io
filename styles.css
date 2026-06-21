@@ -155,23 +155,25 @@ select {
 }
 
 .hero-copy {
-  max-width: 890px;
+  position: relative;
+  max-width: 1000px;
+  min-height: 330px;
+  padding-right: 270px;
 }
 
 .hero-identity {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: block;
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  flex: 0 0 auto;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 230px;
+  height: auto;
   border: 4px solid #ffffff;
-  border-radius: 999px;
-  object-fit: cover;
+  border-radius: 8px;
+  object-fit: contain;
   box-shadow:
     0 0 0 1.5px var(--line-strong),
     0 18px 42px rgba(20, 108, 148, 0.18);
@@ -819,6 +821,15 @@ select {
     font-size: 3.3rem;
   }
 
+  .hero-copy {
+    min-height: 292px;
+    padding-right: 220px;
+  }
+
+  .profile-photo {
+    width: 190px;
+  }
+
   .hero h1 span {
     font-size: 1.75rem;
   }
@@ -865,18 +876,28 @@ select {
     padding: 48px 0 56px;
   }
 
+  .hero-copy {
+    min-height: 0;
+    padding-right: 0;
+  }
+
   .hero h1 {
-    font-size: 2.35rem;
+    font-size: 2.18rem;
   }
 
   .hero-identity {
-    gap: 14px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 76px;
+    gap: 12px;
+    align-items: start;
   }
 
   .profile-photo {
-    width: 78px;
-    height: 78px;
+    position: static;
+    width: 76px;
+    height: auto;
     border-width: 3px;
+    border-radius: 6px;
   }
 
   .hero h1 span {
