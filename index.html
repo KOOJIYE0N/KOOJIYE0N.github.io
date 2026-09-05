@@ -50,8 +50,7 @@
       <div class="nav-links">
         <a href="#focus">Focus</a>
         <a href="#awards">Awards</a>
-        <a href="#work">Work</a>
-        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -162,11 +161,17 @@
                   <strong>2023</strong>
                 </div>
                 <div class="award-copy">
-                  <p class="award-event">제23회 한국지능로봇경진대회</p>
-                  <h3>국방로봇부문 우수상</h3>
+                  <p class="award-event">
+                    23rd Korea Intelligent Robot Competition
+                    <span class="korean-title">(제23회 한국지능로봇경진대회)</span>
+                  </p>
+                  <h3>
+                    Excellence Award, Defense Robot Division
+                    <span class="korean-title">(국방로봇부문 우수상)</span>
+                  </h3>
                   <p>
-                    2023년 10월 7일부터 9일까지 계룡대에서 개최된 한국지능로봇경진대회
-                    국방로봇부문에서 우수상, 육군참모총장 상장을 수상했습니다.
+                    Received the Excellence Award and the Republic of Korea Army Chief of Staff
+                    Award in the Defense Robot Division, held at Gyeryongdae from October 7-9, 2023.
                   </p>
                 </div>
               </div>
@@ -188,11 +193,17 @@
                   <strong>2025</strong>
                 </div>
                 <div class="award-copy">
-                  <p class="award-event">2025 극한로봇 경진대회</p>
-                  <h3>최우수상</h3>
+                  <p class="award-event">
+                    2025 Extreme Robot Competition
+                    <span class="korean-title">(2025 극한로봇 경진대회)</span>
+                  </p>
+                  <h3>
+                    Grand Prize
+                    <span class="korean-title">(최우수상)</span>
+                  </h3>
                   <p>
-                    2025년 10월 2일 서울 코엑스에서 열린 극한로봇 경진대회에서
-                    최우수상, 서울경제진흥원 대표이사상을 수상했습니다.
+                    Received the Grand Prize and the Seoul Business Agency CEO Award at COEX in
+                    Seoul on October 2, 2025.
                   </p>
                 </div>
               </div>
@@ -201,14 +212,14 @@
         </div>
       </section>
 
-      <section class="work section-band" id="work" aria-labelledby="work-title">
+      <section class="work section-band" id="projects" aria-labelledby="projects-title">
         <div class="section-inner">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">Selected work</p>
-              <h2 id="work-title">Projects and papers</h2>
+              <p class="section-kicker">Projects</p>
+              <h2 id="projects-title">Research Projects</h2>
             </div>
-            <div class="filters" aria-label="Filter selected work">
+            <div class="filters" aria-label="Filter research projects">
               <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
               <button class="filter-button" type="button" data-filter="vla" aria-pressed="false">VLA</button>
               <button class="filter-button" type="button" data-filter="space" aria-pressed="false">Space</button>
@@ -229,16 +240,28 @@
                 A depth-fused diffusion policy for two-phase spacecraft berthing, designed to remain
                 robust when individual camera views are lost during terminal manipulation.
               </p>
-              <figure class="research-figure">
-                <img
-                  src="assets/research/depth-fused-policy-architecture.png"
-                  alt="Depth-fused diffusion policy architecture combining multi-view RGB features with monocular depth features"
-                  width="2200"
-                  height="949"
-                  loading="lazy"
-                />
-                <figcaption>Depth-fused diffusion-policy architecture for spacecraft berthing.</figcaption>
-              </figure>
+              <div class="research-figures">
+                <figure class="research-figure">
+                  <img
+                    src="assets/research/spacecraft-berthing-benchmark.png"
+                    alt="Two-phase manipulator-assisted spacecraft berthing benchmark"
+                    width="2400"
+                    height="599"
+                    loading="lazy"
+                  />
+                  <figcaption>Two-phase manipulator-assisted spacecraft berthing benchmark.</figcaption>
+                </figure>
+                <figure class="research-figure">
+                  <img
+                    src="assets/research/depth-fused-policy-architecture.png"
+                    alt="Depth-fused diffusion policy architecture combining multi-view RGB features with monocular depth features"
+                    width="2200"
+                    height="949"
+                    loading="lazy"
+                  />
+                  <figcaption>Depth-fused diffusion-policy architecture.</figcaption>
+                </figure>
+              </div>
             </article>
 
             <article class="work-card featured" data-tags="vla manipulation">
@@ -283,10 +306,13 @@
 
             <article class="work-card" data-tags="space manipulation">
               <div class="card-topline">
-                <span>KSAS Fall Conference</span>
+                <span>KSAS Fall Conference (한국항공우주학회 추계학술대회)</span>
                 <span>2025</span>
               </div>
-              <h3>단안 카메라 기반 모방 학습을 활용한 우주 로봇 팔 도킹 연구</h3>
+              <h3>
+                Monocular Vision-Based Imitation Learning for Space Robotic Arm Docking
+                <span class="korean-title">(단안 카메라 기반 모방 학습을 활용한 우주 로봇 팔 도킹 연구)</span>
+              </h3>
               <p>
                 A space robotic arm docking study using monocular visual input and imitation learning,
                 connecting perception-driven demonstrations to docking-oriented manipulation.
@@ -300,10 +326,13 @@
 
             <article class="work-card" data-tags="vla manipulation">
               <div class="card-topline">
-                <span>IEIE Summer Conference</span>
+                <span>IEIE Summer Conference (대한전자공학회 하계종합학술대회)</span>
                 <span>2025</span>
               </div>
-              <h3>BB-VLA: Brain-Body 프레임워크로 사람의 사고를 모방하는 지능형 매니퓰레이터 팔레타이징</h3>
+              <h3>
+                BB-VLA: Intelligent Manipulator Palletizing through a Brain-Body Framework
+                <span class="korean-title">(BB-VLA: Brain-Body 프레임워크로 사람의 사고를 모방하는 지능형 매니퓰레이터 팔레타이징)</span>
+              </h3>
               <p>
                 BB-VLA frames robot palletizing as a brain-body system, separating higher-level
                 reasoning from embodied manipulation to imitate human-like task planning and action.
@@ -312,10 +341,13 @@
 
             <article class="work-card" data-tags="space manipulation">
               <div class="card-topline">
-                <span>SASE Spring Conference</span>
+                <span>SASE Spring Conference (항공우주시스템공학회 춘계학술대회)</span>
                 <span>2025</span>
               </div>
-              <h3>우주 비행체 도킹 보조를 위한 로봇팔 학습 데이터 생성 및 모방 학습 응용 연구</h3>
+              <h3>
+                Learning Data Generation and Imitation Learning for Robotic Arm-Assisted Spacecraft Docking
+                <span class="korean-title">(우주 비행체 도킹 보조를 위한 로봇팔 학습 데이터 생성 및 모방 학습 응용 연구)</span>
+              </h3>
               <p>
                 A data-generation and imitation-learning study for improving robot-arm control
                 accuracy in spacecraft docking assistance under space-oriented manipulation settings.
@@ -327,70 +359,6 @@
               </div>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section class="publications section-band" id="publications" aria-labelledby="publications-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Publication list</p>
-              <h2 id="publications-title">Verified public entries</h2>
-            </div>
-            <a class="text-link" href="https://scholar.google.com/scholar?q=%22Jiyeon+Koo%22+%22RetoVLA%22" target="_blank" rel="noreferrer">
-              Scholar search
-            </a>
-          </div>
-
-          <ol class="publication-list">
-            <li>
-              <span class="pub-year">2026</span>
-              <div>
-                <h3>RetoVLA: Reusing Register Tokens for Spatial Reasoning in Vision-Language-Action Models</h3>
-                <p>
-                  Jiyeon Koo, Taewan Cho, Hyunjoon Kang, Eunseom Pyo, Tae Gyun Oh, Taeryang Kim,
-                  Andrew Jaeyong Choi. IEEE International Conference on Robotics and Automation
-                  (ICRA), 2026; arXiv:2509.21243.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="pub-year">2026</span>
-              <div>
-                <h3>Kalman-Conditioned Action Chunking Transformers for Dynamic Object Grasping Toward Aerial Recovery Systems</h3>
-                <p>
-                  Jiyeon Koo, Eunseom Pyo, Andrew Jaeyong Choi. Drones and Unmanned Systems, 2026.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="pub-year">2025</span>
-              <div>
-                <h3>단안 카메라 기반 모방 학습을 활용한 우주 로봇 팔 도킹 연구</h3>
-                <p>
-                  구지연, 조태완, 최재용. 한국항공우주학회 2025년도 추계학술대회.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="pub-year">2025</span>
-              <div>
-                <h3>BB-VLA: Brain-Body 프레임워크로 사람의 사고를 모방하는 지능형 매니퓰레이터 팔레타이징</h3>
-                <p>
-                  구지연, 차준하, 최재용. 대한전자공학회 2025년도 하계종합학술대회.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="pub-year">2025</span>
-              <div>
-                <h3>우주 비행체 도킹 보조를 위한 로봇팔 학습 데이터 생성 및 모방 학습 응용 연구</h3>
-                <p>
-                  구지연, 최재용. 항공우주시스템공학회 2025년도 춘계학술대회.
-                </p>
-              </div>
-            </li>
-          </ol>
         </div>
       </section>
 
