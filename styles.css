@@ -181,13 +181,12 @@ section[id] { scroll-margin-top: 24px; }
 .experience-card .award-body { max-width: 960px; }
 .experience-link { display: inline-flex; margin-top: 14px; color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: underline; text-decoration-color: #999; text-underline-offset: 4px; }
 .ohgym-logo { display: block; width: min(100%, 230px); height: auto; margin: 12px 0 18px; }
-.ohgym-summary { border-left: 2px solid var(--ink); padding-left: 16px; }
+.ohgym-summary { padding-left: 0; }
 .ohgym-summary h3 { margin-bottom: 7px; }
 .ohgym-details { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0 0 8px !important; color: var(--ink) !important; font-size: .82rem !important; font-weight: 600; }
 .ohgym-details span + span::before { content: "·"; margin-right: 16px; color: var(--quiet); }
-.ohgym-description { max-width: 900px; margin-bottom: 0 !important; }
+.ohgym-description { max-width: none; margin-bottom: 0 !important; white-space: nowrap; }
 .ohgym-media { width: min(100%, 360px); margin-top: 22px; }
-.ohgym-media-label { margin: 0 0 8px !important; color: var(--quiet) !important; font-size: .76rem !important; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
 .ohgym-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .ohgym-video-button { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 0; background: #000; cursor: zoom-in; aspect-ratio: 3 / 4; }
 .ohgym-video-button video { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -308,6 +307,7 @@ section[id] { scroll-margin-top: 24px; }
   .award-media img { height: 240px; }
   .ohgym-media { width: min(100%, 320px); }
   .ohgym-details span + span::before { display: none; }
+  .ohgym-description { white-space: normal; }
   .section-heading { align-items: flex-start; flex-direction: column; margin-bottom: 28px; }
   .filters { justify-content: flex-start; }
   .work-card, .work-card.featured { grid-template-columns: 1fr; gap: 0; }
