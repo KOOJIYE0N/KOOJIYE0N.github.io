@@ -97,10 +97,10 @@ button, input, textarea, select { font: inherit; }
 }
 
 .hero-lede { max-width: 610px; margin: 32px 0 0; font-size: 1.1rem; line-height: 1.6; }
-.hero-tags, .method-tags { display: flex; flex-wrap: wrap; }
+.hero-tags { display: flex; flex-wrap: wrap; }
 .hero-tags { max-width: 620px; gap: 6px 0; margin-top: 24px; color: var(--muted); font-size: .9rem; }
-.hero-tags span, .method-tags span { display: inline-flex; align-items: center; }
-.hero-tags span:not(:last-child)::after, .method-tags span:not(:last-child)::after { content: "/"; margin: 0 10px; color: #b6b6b6; }
+.hero-tags span { display: inline-flex; align-items: center; }
+.hero-tags span:not(:last-child)::after { content: "/"; margin: 0 10px; color: #b6b6b6; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 30px; }
 
 .primary-link, .secondary-link, .text-link, .card-links a, .contact-panel a {
@@ -128,21 +128,14 @@ section[id] { scroll-margin-top: 24px; }
   text-transform: uppercase;
 }
 
-.awards, .work, .methods, .contact { background: var(--paper); }
+.awards, .work, .contact { background: var(--paper); }
 .awards .section-inner, .work .section-inner,
-.methods .section-inner, .contact .section-inner {
+.contact .section-inner {
   border-top: 1px solid var(--ink);
   padding-top: 30px;
 }
 
-.methods-grid, .contact-grid {
-  display: grid;
-  grid-template-columns: minmax(220px, .72fr) minmax(0, 1.28fr);
-  gap: 64px;
-  align-items: start;
-}
-
-.section-heading h2, .methods h2, .contact h2 {
+.section-heading h2 {
   margin: 0;
   font-size: 1.8rem;
   font-weight: 500;
@@ -245,8 +238,6 @@ section[id] { scroll-margin-top: 24px; }
 .card-links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 2px; }
 .card-links a, .text-link { border: 0; background: transparent; padding: 0; box-shadow: none; }
 
-.method-tags { gap: 8px 0; color: var(--muted); font-size: .92rem; }
-.contact h2 { max-width: 420px; }
 .contact-panel { display: grid; gap: 10px; align-content: start; }
 .contact-panel a { justify-content: flex-start; border: 0; background: transparent; padding: 0; }
 
@@ -260,15 +251,12 @@ section[id] { scroll-margin-top: 24px; }
   margin: 0 auto;
 }
 .footer-inner p { margin: 0; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 14px; }
 :focus-visible { outline: 2px solid #111; outline-offset: 4px; }
 .is-hidden { display: none; }
 
 @media (max-width: 800px) {
   .hero-copy { min-height: 250px; padding-right: 240px; }
   .profile-photo { width: 200px; height: 250px; }
-  .methods-grid, .contact-grid { grid-template-columns: 1fr; gap: 28px; }
-  .pillar-grid { gap: 20px; }
 }
 
 @media (max-width: 620px) {
@@ -289,7 +277,7 @@ section[id] { scroll-margin-top: 24px; }
   .hero h1 { font-size: 2.75rem; }
   .hero-lede { font-size: 1rem; }
   .section-band { padding: 54px 0; }
-  .section-heading h2, .methods h2, .contact h2 { font-size: 1.55rem; }
+  .section-heading h2 { font-size: 1.55rem; }
   .award-grid { grid-template-columns: 1fr; }
   .award-grid { gap: 48px; }
   .award-media img { height: 240px; }
