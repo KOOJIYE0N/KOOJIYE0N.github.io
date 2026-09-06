@@ -181,7 +181,7 @@ section[id] { scroll-margin-top: 24px; }
 .experience-card .award-body { max-width: 760px; }
 .experience-link { display: inline-flex; margin-top: 14px; color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: underline; text-decoration-color: #999; text-underline-offset: 4px; }
 .ohgym-media { width: min(100%, 360px); margin-top: 18px; }
-.ohgym-logo { display: block; width: min(100%, 230px); height: auto; margin-bottom: 12px; }
+.ohgym-logo { display: block; width: min(100%, 230px); height: auto; margin: 12px 0 16px; }
 .ohgym-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .ohgym-video-button { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 0; background: #000; cursor: zoom-in; aspect-ratio: 3 / 4; }
 .ohgym-video-button video { display: block; width: 100%; height: 100%; object-fit: cover; }
