@@ -177,6 +177,9 @@ section[id] { scroll-margin-top: 24px; }
 .award-copy h3 { margin: 0 0 10px; font-size: 1.08rem; font-weight: 600; line-height: 1.35; }
 .award-copy p:last-child { margin: 0; color: var(--muted); font-size: .91rem; }
 .korean-title { display: block; margin-top: 3px; color: var(--muted); font-size: .82em; font-weight: 400; line-height: 1.45; }
+.experience-card { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 30px; }
+.experience-card .award-body { max-width: 760px; }
+.experience-link { display: inline-flex; margin-top: 14px; color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: underline; text-decoration-color: #999; text-underline-offset: 4px; }
 
 .filters { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 18px; }
 .filter-button {
