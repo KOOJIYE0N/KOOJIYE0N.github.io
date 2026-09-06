@@ -36,6 +36,8 @@ button, input, textarea, select { font: inherit; }
 .award-event { margin: 0 0 2px; color: var(--quiet); font-size: .82rem; }
 .award-copy h3 { margin: 0 0 4px; font-size: 1rem; font-weight: 600; line-height: 1.35; }
 .award-copy p:last-child { margin: 0; color: var(--muted); font-size: .92rem; }
+.award-content { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 16px; align-items: start; }
+.award-photo { display: block; width: 150px; height: 104px; object-fit: cover; }
 .korean-title { display: block; margin-top: 2px; color: var(--quiet); font-size: .84em; font-weight: 400; line-height: 1.4; }
 .experience-card { padding-top: 18px; border-top: 1px solid var(--line); }
 .experience-card .award-body { max-width: 760px; }
@@ -90,6 +92,8 @@ button, input, textarea, select { font: inherit; }
   .hero h1 { font-size: 1.75rem; }
   .section-band { padding: 22px 0; }
   .award-body, .work-card, .work-card.featured { grid-template-columns: 1fr; gap: 0; }
+  .award-content { grid-template-columns: minmax(0, 1fr) 110px; gap: 12px; }
+  .award-photo { width: 110px; height: 82px; }
   .award-date { display: flex; justify-content: space-between; margin-bottom: 5px; }
   .award-date span, .award-date strong { display: inline; }
   .work-card h3, .work-card.featured h3, .work-card p, .video-embed, .research-figures, .card-links { grid-column: 1; }
