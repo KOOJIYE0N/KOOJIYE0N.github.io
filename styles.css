@@ -1,9 +1,9 @@
-:root { color-scheme: light; --ink: #161616; --muted: #555; --quiet: #777; --paper: #fff; --line: #e2e2e2; --max-width: 880px; }
+:root { color-scheme: light; --ink: #161616; --muted: #555; --quiet: #777; --link: #0b5e92; --paper: #fff; --line: #e2e2e2; --max-width: 880px; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
-a { color: inherit; text-decoration: underline; text-decoration-color: #aaa; text-underline-offset: 3px; }
-a:hover, a:focus-visible { text-decoration-color: var(--ink); }
+a { color: var(--link); text-decoration: underline; text-decoration-color: #8bb3cb; text-underline-offset: 3px; }
+a:hover, a:focus-visible { color: var(--ink); text-decoration-color: var(--ink); }
 button, input, textarea, select { font: inherit; }
 .skip-link { position: fixed; top: 12px; left: 12px; z-index: 10; transform: translateY(-160%); background: #111; color: #fff; padding: 8px 12px; }
 .skip-link:focus { transform: translateY(0); }
@@ -21,7 +21,7 @@ button, input, textarea, select { font: inherit; }
 .profile-photo { position: absolute; top: 0; right: 0; width: 128px; height: 162px; object-fit: cover; object-position: center 56%; }
 .hero-lede { max-width: 650px; margin: 21px 0 0; color: var(--muted); font-size: 1rem; }
 .hero-actions { display: flex; margin-top: 13px; }
-.primary-link, .secondary-link, .text-link, .card-links a, .contact-panel a { color: var(--ink); font-size: .9rem; font-weight: 600; }
+.primary-link, .secondary-link, .text-link, .card-links a, .contact-panel a { color: var(--link); font-size: .9rem; font-weight: 600; }
 .section-band { padding: 26px 0; }
 .section-heading { margin-bottom: 16px; }
 .section-heading h2 { margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -.01em; }
@@ -49,7 +49,7 @@ button, input, textarea, select { font: inherit; }
 .ohgym-video-button { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 0; background: #000; cursor: zoom-in; aspect-ratio: 3 / 4; }
 .ohgym-video-button video { display: block; width: 100%; height: 100%; object-fit: cover; }
 .ohgym-video-button span { position: absolute; right: 5px; bottom: 5px; padding: 2px 4px; background: rgba(255, 255, 255, .9); color: #111; font-size: .63rem; font-weight: 600; }
-.experience-link { display: inline-flex; margin-top: 9px; color: var(--muted); font-size: .84rem; }
+.experience-link { display: inline-flex; margin-top: 9px; color: var(--link); font-size: .84rem; }
 .work-grid { display: grid; gap: 23px; }
 .work-card, .work-card.featured { display: grid; grid-template-columns: 118px minmax(0, 1fr); column-gap: 18px; padding: 0; background: transparent; }
 .card-topline { grid-column: 1; grid-row: 1 / span 8; color: var(--quiet); font-size: .78rem; line-height: 1.4; }
@@ -65,7 +65,7 @@ button, input, textarea, select { font: inherit; }
 .research-figure img { display: block; width: 100%; height: auto; background: #fff; }
 .research-figure figcaption { margin-top: 4px; color: var(--quiet); font-size: .74rem; }
 .card-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 7px; }
-.card-links a { color: var(--muted); font-size: .84rem; font-weight: 400; }
+.card-links a { color: var(--link); font-size: .84rem; font-weight: 400; }
 .contact { padding-top: 34px; }
 .contact-panel { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 .contact-panel a { font-size: .9rem; }
