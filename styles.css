@@ -180,6 +180,19 @@ section[id] { scroll-margin-top: 24px; }
 .experience-card { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 30px; }
 .experience-card .award-body { max-width: 760px; }
 .experience-link { display: inline-flex; margin-top: 14px; color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: underline; text-decoration-color: #999; text-underline-offset: 4px; }
+.ohgym-media { width: min(100%, 360px); margin-top: 18px; }
+.ohgym-logo { display: block; width: min(100%, 230px); height: auto; margin-bottom: 12px; }
+.ohgym-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.ohgym-video-button { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 0; background: #000; cursor: zoom-in; aspect-ratio: 3 / 4; }
+.ohgym-video-button video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ohgym-video-button span { position: absolute; right: 7px; bottom: 7px; padding: 4px 6px; background: rgba(255, 255, 255, .92); color: #111; font-size: .69rem; font-weight: 600; }
+.ohgym-video-button:hover, .ohgym-video-button:focus-visible { border-color: var(--ink); }
+.video-dialog { width: min(92vw, 720px); max-width: none; margin: auto; padding: 16px; border: 1px solid var(--ink); background: #fff; }
+.video-dialog::backdrop { background: rgba(0, 0, 0, .72); }
+.video-dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; }
+.video-dialog-header p { margin: 0; font-size: .9rem; font-weight: 600; }
+.video-dialog-close { padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: .8rem; text-decoration: underline; text-underline-offset: 3px; }
+.video-dialog-player { display: block; width: 100%; max-height: 76svh; background: #000; }
 
 .filters { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 18px; }
 .filter-button {
@@ -287,6 +300,7 @@ section[id] { scroll-margin-top: 24px; }
   .pillar-index { margin-bottom: 12px; }
   .award-grid { gap: 48px; }
   .award-media img { height: 240px; }
+  .ohgym-media { width: min(100%, 320px); }
   .section-heading { align-items: flex-start; flex-direction: column; margin-bottom: 28px; }
   .filters { justify-content: flex-start; }
   .work-card, .work-card.featured { grid-template-columns: 1fr; gap: 0; }

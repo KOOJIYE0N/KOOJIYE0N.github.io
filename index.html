@@ -223,6 +223,23 @@
                     ROBOTIS's OH! GYM! Cohort 1. The team trained for an obstacle-run theme using
                     humanoid development environments, mentoring, and open-source resources.
                   </p>
+                  <div class="ohgym-media" aria-label="OH! GYM! project media">
+                    <img class="ohgym-logo" src="assets/ohgym/oh-gym-logo.webp" alt="OH! Open Humanoid logo" width="1200" height="300" />
+                    <div class="ohgym-video-grid">
+                      <button class="ohgym-video-button" type="button" data-video="assets/ohgym/ohgym-training-1.mp4" data-title="OH! GYM! training video 1" aria-haspopup="dialog">
+                        <video muted loop autoplay playsinline preload="metadata" aria-hidden="true">
+                          <source src="assets/ohgym/ohgym-training-1.mp4" type="video/mp4" />
+                        </video>
+                        <span>View video</span>
+                      </button>
+                      <button class="ohgym-video-button" type="button" data-video="assets/ohgym/ohgym-training-2.mp4" data-title="OH! GYM! training video 2" aria-haspopup="dialog">
+                        <video muted loop autoplay playsinline preload="metadata" aria-hidden="true">
+                          <source src="assets/ohgym/ohgym-training-2.mp4" type="video/mp4" />
+                        </video>
+                        <span>View video</span>
+                      </button>
+                    </div>
+                  </div>
                   <a class="experience-link" href="https://www.robotis.com/en/project/ohgym.php#trainers" target="_blank" rel="noreferrer">
                     View the ROBOTIS project page
                   </a>
@@ -429,6 +446,14 @@
         </div>
       </div>
     </footer>
+
+    <dialog class="video-dialog" aria-labelledby="video-dialog-title">
+      <div class="video-dialog-header">
+        <p id="video-dialog-title">OH! GYM! Training Video</p>
+        <button class="video-dialog-close" type="button" aria-label="Close video">Close</button>
+      </div>
+      <video class="video-dialog-player" controls playsinline></video>
+    </dialog>
 
     <script src="script.js"></script>
   </body>
