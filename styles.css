@@ -24,7 +24,7 @@ button, input, textarea, select { font: inherit; }
 .primary-link, .secondary-link, .text-link, .card-links a, .contact-panel a { color: var(--link); font-size: .9rem; font-weight: 600; }
 .section-band { padding: 44px 0; }
 .section-heading { margin-bottom: 16px; }
-.section-heading h2 { margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -.01em; }
+.section-heading h2 { display: inline-block; margin: 0; padding: 5px 9px; background: #eeeeee; font-size: 1.25rem; font-weight: 600; letter-spacing: -.01em; line-height: 1.25; }
 .section-kicker { margin: 0 0 3px; color: var(--quiet); font-size: .76rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
 .award-grid { display: grid; gap: 18px; }
 .award-card { padding: 0; }
@@ -62,12 +62,11 @@ button, input, textarea, select { font: inherit; }
 .work-card p { margin: 0; color: var(--muted); font-size: .92rem; }
 .video-embed { position: relative; width: min(100%, 410px); margin: 10px 0 0; overflow: hidden; aspect-ratio: 16 / 9; background: #000; }
 .video-embed iframe, .video-embed video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.research-figures { display: grid; width: min(100%, 410px); gap: 13px; margin-top: 10px; }
+.research-figures { display: grid; width: min(100%, 330px); gap: 10px; margin-top: 10px; }
 .research-figure { width: 100%; margin: 0; }
-.research-figure img { display: block; width: 100%; height: auto; background: #fff; }
-.research-figure figcaption { margin-top: 4px; color: var(--quiet); font-size: .74rem; }
-.project-figure { width: min(100%, 410px); margin: 10px 0 0; }
-.project-figure img { display: block; width: 100%; height: auto; background: #fff; }
+.project-figure { width: min(100%, 330px); margin: 10px 0 0; }
+.image-zoom-button { display: block; width: 100%; padding: 0; border: 1px solid var(--line); background: #fff; cursor: zoom-in; }
+.image-zoom-button img { display: block; width: 100%; height: auto; background: #fff; }
 .card-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 7px; }
 .card-links a { color: var(--link); font-size: .84rem; font-weight: 400; }
 .contact { padding-top: 34px; }
@@ -81,6 +80,11 @@ button, input, textarea, select { font: inherit; }
 .video-dialog-header p { margin: 0; font-size: .9rem; font-weight: 600; }
 .video-dialog-close { padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: .8rem; text-decoration: underline; text-underline-offset: 3px; }
 .video-dialog-player { display: block; width: 100%; max-height: 76svh; background: #000; }
+.image-dialog { width: min(94vw, 1120px); max-width: none; max-height: 92svh; margin: auto; padding: 12px; border: 1px solid #222; background: #fff; }
+.image-dialog::backdrop { background: rgba(0, 0, 0, .72); }
+.image-dialog-header { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+.image-dialog-close { padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: .8rem; text-decoration: underline; text-underline-offset: 3px; }
+.image-dialog-preview { display: block; width: auto; max-width: 100%; height: auto; max-height: 82svh; margin: 0 auto; object-fit: contain; }
 .is-hidden { display: none; }
 :focus-visible { outline: 2px solid #111; outline-offset: 3px; }
 @media (max-width: 620px) {

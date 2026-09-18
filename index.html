@@ -18,7 +18,7 @@
     <meta property="og:image" content="https://koojiye0n.github.io/assets/profile-main.jpg" />
     <title>Koo Jiyeon | Robotics & Embodied AI</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260918-3" />
+    <link rel="stylesheet" href="styles.css?v=20260918-4" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -100,24 +100,26 @@
               </p>
               <div class="research-figures">
                 <figure class="research-figure">
-                  <img
-                    src="assets/research/spacecraft-berthing-benchmark.png"
-                    alt="Two-phase manipulator-assisted spacecraft berthing benchmark"
-                    width="2400"
-                    height="599"
-                    loading="lazy"
-                  />
-                  <figcaption>Two-phase manipulator-assisted spacecraft berthing benchmark.</figcaption>
+                  <button class="image-zoom-button" type="button" data-image="assets/research/spacecraft-berthing-benchmark.png" data-alt="Two-phase manipulator-assisted spacecraft berthing benchmark" aria-label="Enlarge spacecraft berthing benchmark figure" aria-haspopup="dialog">
+                    <img
+                      src="assets/research/spacecraft-berthing-benchmark.png"
+                      alt="Two-phase manipulator-assisted spacecraft berthing benchmark"
+                      width="2400"
+                      height="599"
+                      loading="lazy"
+                    />
+                  </button>
                 </figure>
                 <figure class="research-figure">
-                  <img
-                    src="assets/research/depth-fused-policy-architecture.png"
-                    alt="Depth-fused diffusion policy architecture combining multi-view RGB features with monocular depth features"
-                    width="2200"
-                    height="949"
-                    loading="lazy"
-                  />
-                  <figcaption>Depth-fused diffusion-policy architecture.</figcaption>
+                  <button class="image-zoom-button" type="button" data-image="assets/research/depth-fused-policy-architecture.png" data-alt="Depth-fused diffusion policy architecture combining multi-view RGB features with monocular depth features" aria-label="Enlarge depth-fused policy architecture figure" aria-haspopup="dialog">
+                    <img
+                      src="assets/research/depth-fused-policy-architecture.png"
+                      alt="Depth-fused diffusion policy architecture combining multi-view RGB features with monocular depth features"
+                      width="2200"
+                      height="949"
+                      loading="lazy"
+                    />
+                  </button>
                 </figure>
               </div>
               <div class="card-links">
@@ -178,13 +180,15 @@
                 A study on recombining action modules to synthesize training data for robot imitation learning.
               </p>
               <figure class="project-figure">
-                <img
-                  src="assets/research/mars-action-module-recombination.png"
-                  alt="MARS pipeline for decomposing demonstrations into reusable action modules and synthesizing augmented imitation-learning data"
-                  width="2550"
-                  height="1366"
-                  loading="lazy"
-                />
+                <button class="image-zoom-button" type="button" data-image="assets/research/mars-action-module-recombination.png" data-alt="MARS pipeline for decomposing demonstrations into reusable action modules and synthesizing augmented imitation-learning data" aria-label="Enlarge MARS research figure" aria-haspopup="dialog">
+                  <img
+                    src="assets/research/mars-action-module-recombination.png"
+                    alt="MARS pipeline for decomposing demonstrations into reusable action modules and synthesizing augmented imitation-learning data"
+                    width="2550"
+                    height="1366"
+                    loading="lazy"
+                  />
+                </button>
               </figure>
             </article>
 
@@ -202,13 +206,15 @@
                 reasoning from embodied manipulation to imitate human-like task planning and action.
               </p>
               <figure class="project-figure">
-                <img
-                  src="assets/research/bb-vla-brain-body-framework.png"
-                  alt="BB-VLA brain-body framework and robot palletizing sequence"
-                  width="2626"
-                  height="1540"
-                  loading="lazy"
-                />
+                <button class="image-zoom-button" type="button" data-image="assets/research/bb-vla-brain-body-framework.png" data-alt="BB-VLA brain-body framework and robot palletizing sequence" aria-label="Enlarge BB-VLA research figure" aria-haspopup="dialog">
+                  <img
+                    src="assets/research/bb-vla-brain-body-framework.png"
+                    alt="BB-VLA brain-body framework and robot palletizing sequence"
+                    width="2626"
+                    height="1540"
+                    loading="lazy"
+                  />
+                </button>
               </figure>
             </article>
 
@@ -324,6 +330,13 @@
       <video class="video-dialog-player" controls playsinline></video>
     </dialog>
 
-    <script src="script.js"></script>
+    <dialog class="image-dialog" aria-label="Research figure preview">
+      <div class="image-dialog-header">
+        <button class="image-dialog-close" type="button" aria-label="Close enlarged image">Close</button>
+      </div>
+      <img class="image-dialog-preview" alt="" />
+    </dialog>
+
+    <script src="script.js?v=20260918-2"></script>
   </body>
 </html>

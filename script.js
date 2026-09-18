@@ -6,6 +6,10 @@ const videoDialog = document.querySelector(".video-dialog");
 const dialogPlayer = document.querySelector(".video-dialog-player");
 const dialogTitle = document.querySelector("#video-dialog-title");
 const dialogClose = document.querySelector(".video-dialog-close");
+const imageButtons = document.querySelectorAll(".image-zoom-button");
+const imageDialog = document.querySelector(".image-dialog");
+const imageDialogPreview = document.querySelector(".image-dialog-preview");
+const imageDialogClose = document.querySelector(".image-dialog-close");
 
 if (yearTarget) {
   yearTarget.textContent = String(new Date().getFullYear());
@@ -53,4 +57,25 @@ videoDialog?.addEventListener("click", (event) => {
 });
 videoDialog?.addEventListener("close", () => {
   dialogPlayer?.pause();
+});
+
+const closeImageDialog = () => {
+  if (!imageDialog || !imageDialogPreview) return;
+  imageDialog.close();
+  imageDialogPreview.removeAttribute("src");
+  imageDialogPreview.alt = "";
+};
+
+imageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!imageDialog || !imageDialogPreview) return;
+    imageDialogPreview.src = button.dataset.image || "";
+    imageDialogPreview.alt = button.dataset.alt || "Research figure";
+    imageDialog.showModal();
+  });
+});
+
+imageDialogClose?.addEventListener("click", closeImageDialog);
+imageDialog?.addEventListener("click", (event) => {
+  if (event.target === imageDialog) closeImageDialog();
 });
