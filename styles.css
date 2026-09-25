@@ -14,11 +14,11 @@ button, input, textarea, select { font: inherit; }
 .nav-links { display: flex; flex-wrap: wrap; gap: 18px; color: var(--muted); font-size: .9rem; }
 .nav-links a { text-decoration: none; }
 .nav-links a:hover, .nav-links a:focus-visible { color: var(--ink); text-decoration: underline; }
-.hero-content { padding: 36px 0 64px; }
-.hero-copy { position: relative; min-height: 250px; padding-right: 260px; }
+.hero-content { padding: 36px 0 100px; }
+.hero-copy { position: relative; min-height: 250px; padding-right: 300px; }
 .hero h1 { margin: 0; font-size: 2rem; font-weight: 600; letter-spacing: -.025em; line-height: 1.05; }
 .hero h1 span { display: block; margin-top: 6px; color: var(--muted); font-size: .95rem; font-weight: 400; letter-spacing: 0; }
-.profile-photo { position: absolute; top: 0; right: 0; width: 220px; height: 250px; object-fit: cover; object-position: center; }
+.profile-photo { position: absolute; top: 0; right: 48px; width: 220px; height: 250px; object-fit: cover; object-position: center; }
 .hero-lede { max-width: 650px; margin: 21px 0 0; color: var(--muted); font-size: 1rem; }
 .hero-actions { display: flex; margin-top: 13px; }
 .primary-link, .secondary-link, .text-link, .card-links a, .contact-panel a { color: var(--link); font-size: .9rem; font-weight: 600; }
@@ -62,8 +62,10 @@ button, input, textarea, select { font: inherit; }
 .work-card p { margin: 0; color: var(--muted); font-size: .92rem; }
 .video-embed { position: relative; width: min(100%, 410px); margin: 10px 0 0; overflow: hidden; aspect-ratio: 16 / 9; background: #000; }
 .video-embed iframe, .video-embed video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.research-figures { display: grid; width: min(100%, 330px); gap: 10px; margin-top: 10px; }
+.research-figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; gap: 10px; margin-top: 12px; }
 .research-figure { width: 100%; margin: 0; }
+.research-figure .image-zoom-button { display: flex; align-items: center; justify-content: center; height: 150px; overflow: hidden; }
+.research-figure .image-zoom-button img { width: 100%; height: 100%; object-fit: contain; }
 .project-figure { width: min(100%, 330px); margin: 10px 0 0; }
 .image-zoom-button { display: block; width: 100%; padding: 0; border: 1px solid var(--line); background: #fff; cursor: zoom-in; }
 .image-zoom-button img { display: block; width: 100%; height: auto; background: #fff; }
@@ -91,7 +93,7 @@ button, input, textarea, select { font: inherit; }
   .site-nav, .hero-content, .section-inner, .footer-inner { width: min(var(--max-width), calc(100% - 32px)); }
   .site-nav { align-items: flex-start; flex-direction: column; gap: 10px; padding: 18px 0; }
   .nav-links { gap: 14px; }
-  .hero-content { padding: 28px 0 46px; }
+  .hero-content { padding: 28px 0 70px; }
   .hero-copy { min-height: 0; padding-right: 0; }
   .hero-identity { display: flex; flex-direction: column; }
   .profile-photo { position: static; order: -1; width: 170px; height: 193px; margin-bottom: 20px; }
@@ -103,6 +105,8 @@ button, input, textarea, select { font: inherit; }
   .award-date { display: flex; justify-content: space-between; margin-bottom: 5px; }
   .award-date span, .award-date strong { display: inline; }
   .work-card h3, .work-card.featured h3, .work-card p, .video-embed, .research-figures, .project-figure, .card-links { grid-column: 1; }
+  .research-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .research-figure .image-zoom-button { height: 115px; }
   .card-topline { grid-column: 1; margin-bottom: 5px; }
   .ohgym-details span + span::before { display: none; }
   .ohgym-description { white-space: normal; }
