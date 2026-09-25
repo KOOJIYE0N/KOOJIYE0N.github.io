@@ -46,8 +46,8 @@ button, input, textarea, select { font: inherit; }
 .ohgym-details { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0 0 5px !important; color: var(--ink) !important; font-size: .8rem !important; font-weight: 600; }
 .ohgym-details span + span::before { content: "·"; margin-right: 12px; color: var(--quiet); }
 .ohgym-description { margin-bottom: 0 !important; }
-.ohgym-media { width: min(100%, 300px); margin-top: 13px; }
-.ohgym-video-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.ohgym-media { width: min(100%, 460px); margin-top: 13px; }
+.ohgym-video-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: start; }
 .ohgym-video-button { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 0; background: #000; cursor: zoom-in; aspect-ratio: 3 / 4; }
 .ohgym-video-button--wide { aspect-ratio: 16 / 9; }
 .ohgym-video-button video { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -63,7 +63,7 @@ button, input, textarea, select { font: inherit; }
 .work-card p { margin: 0; color: var(--muted); font-size: .92rem; }
 .video-embed { position: relative; width: min(100%, 410px); margin: 10px 0 0; overflow: hidden; aspect-ratio: 16 / 9; background: #000; }
 .video-embed iframe, .video-embed video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.research-figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; gap: 10px; margin-top: 12px; }
+.research-figures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 10px; margin-top: 12px; }
 .research-figure { width: 100%; margin: 0; }
 .research-figure .image-zoom-button { display: flex; align-items: center; justify-content: center; height: 150px; overflow: hidden; }
 .research-figure .image-zoom-button img { width: 100%; height: 100%; object-fit: contain; }
@@ -106,7 +106,7 @@ button, input, textarea, select { font: inherit; }
   .award-date { display: flex; justify-content: space-between; margin-bottom: 5px; }
   .award-date span, .award-date strong { display: inline; }
   .work-card h3, .work-card.featured h3, .work-card p, .video-embed, .research-figures, .project-figure, .card-links { grid-column: 1; }
-  .research-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .research-figures { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .research-figure .image-zoom-button { height: 115px; }
   .card-topline { grid-column: 1; margin-bottom: 5px; }
   .ohgym-details span + span::before { display: none; }
