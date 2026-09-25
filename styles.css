@@ -49,6 +49,7 @@ button, input, textarea, select { font: inherit; }
 .ohgym-media { width: 250px; margin-top: 13px; }
 .ohgym-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
 .ohgym-video-button { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 0; background: #000; cursor: zoom-in; aspect-ratio: 3 / 4; }
+.ohgym-video-button--wide { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
 .ohgym-video-button video { display: block; width: 100%; height: 100%; object-fit: cover; }
 .ohgym-video-button span { position: absolute; right: 5px; bottom: 5px; padding: 2px 4px; background: rgba(255, 255, 255, .9); color: #111; font-size: .63rem; font-weight: 600; }
 .experience-link { display: inline-flex; margin-top: 9px; color: var(--link); font-size: .84rem; }
