@@ -15,10 +15,10 @@ button, input, textarea, select { font: inherit; }
 .nav-links a { text-decoration: none; }
 .nav-links a:hover, .nav-links a:focus-visible { color: var(--ink); text-decoration: underline; }
 .hero-content { padding: 36px 0 64px; }
-.hero-copy { position: relative; min-height: 210px; padding-right: 225px; }
+.hero-copy { position: relative; min-height: 250px; padding-right: 260px; }
 .hero h1 { margin: 0; font-size: 2rem; font-weight: 600; letter-spacing: -.025em; line-height: 1.05; }
 .hero h1 span { display: block; margin-top: 6px; color: var(--muted); font-size: .95rem; font-weight: 400; letter-spacing: 0; }
-.profile-photo { position: absolute; top: 0; right: 0; width: 185px; height: 210px; object-fit: cover; object-position: center; }
+.profile-photo { position: absolute; top: 0; right: 0; width: 220px; height: 250px; object-fit: cover; object-position: center; }
 .hero-lede { max-width: 650px; margin: 21px 0 0; color: var(--muted); font-size: 1rem; }
 .hero-actions { display: flex; margin-top: 13px; }
 .primary-link, .secondary-link, .text-link, .card-links a, .contact-panel a { color: var(--link); font-size: .9rem; font-weight: 600; }
@@ -53,13 +53,11 @@ button, input, textarea, select { font: inherit; }
 .ohgym-video-button span { position: absolute; right: 5px; bottom: 5px; padding: 2px 4px; background: rgba(255, 255, 255, .9); color: #111; font-size: .63rem; font-weight: 600; }
 .experience-link { display: inline-flex; margin-top: 9px; color: var(--link); font-size: .84rem; }
 .work-grid { display: grid; gap: 0; }
-.project-category-title { margin: 0 0 14px; color: var(--ink); font-size: .82rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
-.work-card + .project-category-title { margin-top: 38px; padding-top: 26px; border-top: 1px solid #8f8f8f; }
 .work-card, .work-card.featured { display: grid; grid-template-columns: minmax(0, 1fr); padding: 0; background: transparent; }
 .work-card + .work-card { margin-top: 22px; padding-top: 22px; border-top: 1px solid #bdbdbd; }
 .card-topline { grid-column: 1; display: flex; justify-content: space-between; gap: 18px; margin-bottom: 4px; color: var(--quiet); font-size: .78rem; line-height: 1.4; }
 .card-topline span { display: inline; }
-.work-card h4, .work-card.featured h4 { grid-column: 1; margin: 0 0 5px; font-size: 1rem; font-weight: 600; line-height: 1.4; }
+.work-card h3, .work-card.featured h3 { grid-column: 1; margin: 0 0 5px; font-size: 1rem; font-weight: 600; line-height: 1.4; }
 .work-card p, .video-embed, .research-figures, .project-figure, .card-links { grid-column: 1; }
 .work-card p { margin: 0; color: var(--muted); font-size: .92rem; }
 .video-embed { position: relative; width: min(100%, 410px); margin: 10px 0 0; overflow: hidden; aspect-ratio: 16 / 9; background: #000; }
@@ -96,7 +94,7 @@ button, input, textarea, select { font: inherit; }
   .hero-content { padding: 28px 0 46px; }
   .hero-copy { min-height: 0; padding-right: 0; }
   .hero-identity { display: flex; flex-direction: column; }
-  .profile-photo { position: static; order: -1; width: 150px; height: 170px; margin-bottom: 20px; }
+  .profile-photo { position: static; order: -1; width: 170px; height: 193px; margin-bottom: 20px; }
   .hero h1 { font-size: 1.75rem; }
   .section-band { padding: 34px 0; }
   .award-body, .work-card, .work-card.featured { grid-template-columns: 1fr; gap: 0; }
@@ -104,7 +102,7 @@ button, input, textarea, select { font: inherit; }
   .award-photo { width: 110px; height: 82px; }
   .award-date { display: flex; justify-content: space-between; margin-bottom: 5px; }
   .award-date span, .award-date strong { display: inline; }
-  .work-card h4, .work-card.featured h4, .work-card p, .video-embed, .research-figures, .project-figure, .card-links { grid-column: 1; }
+  .work-card h3, .work-card.featured h3, .work-card p, .video-embed, .research-figures, .project-figure, .card-links { grid-column: 1; }
   .card-topline { grid-column: 1; margin-bottom: 5px; }
   .ohgym-details span + span::before { display: none; }
   .ohgym-description { white-space: normal; }
