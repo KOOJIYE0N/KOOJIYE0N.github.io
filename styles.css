@@ -63,7 +63,7 @@ button, input, textarea, select { font: inherit; }
 .work-card p { margin: 0; color: var(--muted); font-size: .92rem; }
 .video-embed { position: relative; width: min(100%, 410px); margin: 10px 0 0; overflow: hidden; aspect-ratio: 16 / 9; background: #000; }
 .video-embed iframe, .video-embed video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.research-figures { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .55fr) minmax(0, 1.4fr); width: 100%; gap: 10px; margin-top: 12px; align-items: start; }
+.research-figures { display: grid; grid-template-columns: minmax(0, 2.32fr) minmax(0, 1.33fr) minmax(0, 1.78fr); width: 100%; gap: 10px; margin-top: 12px; align-items: start; }
 .research-figure { width: 100%; margin: 0; }
 .project-figure { width: min(100%, 330px); margin: 10px 0 0; }
 .image-zoom-button { display: block; width: 100%; padding: 0; border: 1px solid var(--line); background: #fff; cursor: zoom-in; }
@@ -104,7 +104,7 @@ button, input, textarea, select { font: inherit; }
   .award-date { display: flex; justify-content: space-between; margin-bottom: 5px; }
   .award-date span, .award-date strong { display: inline; }
   .work-card h3, .work-card.featured h3, .work-card p, .video-embed, .research-figures, .project-figure, .card-links { grid-column: 1; }
-  .research-figures { grid-template-columns: minmax(0, 1fr) minmax(0, .75fr) minmax(0, 1.25fr); }
+  .research-figures { grid-template-columns: minmax(0, 2.32fr) minmax(0, 1.33fr) minmax(0, 1.78fr); }
   .card-topline { grid-column: 1; margin-bottom: 5px; }
   .ohgym-details span + span::before { display: none; }
   .ohgym-description { white-space: normal; }
