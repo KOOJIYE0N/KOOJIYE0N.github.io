@@ -44,15 +44,17 @@ button, input, textarea, select { font: inherit; }
 .award-video-button span { position: absolute; right: 5px; bottom: 5px; padding: 2px 4px; background: rgba(255, 255, 255, .9); color: #111; font-size: .63rem; font-weight: 600; }
 .korean-title { display: block; margin-top: 2px; color: var(--quiet); font-size: .84em; font-weight: 400; line-height: 1.4; }
 .experience-card { padding-top: 18px; border-top: 1px solid var(--line); }
-.experience-card .award-body { max-width: 760px; }
+.experience-card .award-body { max-width: none; }
 .ohgym-logo { display: block; width: 164px; height: auto; margin: 8px 0 10px; }
 .ohgym-summary h3 { margin-bottom: 3px; }
 .ohgym-details { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0 0 5px !important; color: var(--ink) !important; font-size: .8rem !important; font-weight: 600; }
 .ohgym-details span + span::before { content: "·"; margin-right: 12px; color: var(--quiet); }
 .ohgym-description { margin-bottom: 0 !important; }
-.ohgym-media { width: min(100%, 620px); margin-top: 13px; }
-.ohgym-video-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2.3fr); gap: 10px; align-items: start; }
+.ohgym-media { width: 100%; margin-top: 13px; }
+.ohgym-video-grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, .75fr) minmax(0, 1.23fr) minmax(0, .5625fr) minmax(0, 1.7778fr); gap: 10px; align-items: start; }
 .ohgym-video-button { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 0; background: #000; cursor: zoom-in; aspect-ratio: 3 / 4; }
+.ohgym-video-button--landscape { aspect-ratio: 886 / 720; }
+.ohgym-video-button--portrait-tall { aspect-ratio: 9 / 16; }
 .ohgym-video-button--wide { aspect-ratio: 16 / 9; }
 .ohgym-video-button video { display: block; width: 100%; height: 100%; object-fit: cover; }
 .ohgym-video-button span { position: absolute; right: 5px; bottom: 5px; padding: 2px 4px; background: rgba(255, 255, 255, .9); color: #111; font-size: .63rem; font-weight: 600; }
@@ -116,5 +118,7 @@ button, input, textarea, select { font: inherit; }
   .card-topline { grid-column: 1; margin-bottom: 5px; }
   .ohgym-details span + span::before { display: none; }
   .ohgym-description { white-space: normal; }
+  .ohgym-media { overflow-x: auto; }
+  .ohgym-video-grid { min-width: 760px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
