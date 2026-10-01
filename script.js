@@ -45,6 +45,9 @@ videoButtons.forEach((button) => {
   button.addEventListener("click", () => {
     if (!videoDialog || !dialogPlayer || !dialogTitle) return;
     dialogPlayer.src = button.dataset.video || "";
+    dialogPlayer.muted = true;
+    dialogPlayer.defaultMuted = true;
+    dialogPlayer.volume = 0;
     dialogTitle.textContent = button.dataset.title || "OH! GYM! Training Video";
     videoDialog.showModal();
     dialogPlayer.play().catch(() => {});
