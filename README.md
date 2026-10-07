@@ -1,6 +1,6 @@
 # KOOJIYE0N.github.io
 
-Personal GitHub Pages site for Koo Jiyeon / 구지연.
+Personal GitHub Pages site for Jiyeon Koo / 구지연.
 
 ## Deploy
 
